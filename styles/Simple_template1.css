@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+}
+
+.container {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+span {
+    display: block;
+}
+
+.header_title {
+    width: 367px;
+    height: 44px;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 60px;
+    font-weight: 400;
+}
