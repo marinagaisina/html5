@@ -9,7 +9,7 @@ body {
     margin: 0 auto;
 }
 
-span {
+.header_title, .about_product_title, .screenshots_title, .reviews_title, .buy_title, .contacts {
     display: block;
 }
 
@@ -22,4 +22,42 @@ span {
     font-family: Arial;
     font-size: 60px;
     font-weight: 400;
+}
+
+footer {
+    display: flex;
+    background-color: #445161;
+    min-height: 535px;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+
+    form fieldset {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .contacts_title {
+        width: 100%;
+    }
+    .footer_copyright {
+        width: 100%;
+    }
+    .social_link_item {
+        display: inline-block;
+        border: 1px solid #ffffff;
+        border-radius: 50%;
+        height: 42px;
+        width: 42px;
+        background-image: url(../img/tw-logo.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .footer_copyright {
+        background-color: #ffffff;
+        height: 26px;
+        align-self: flex-end;
+        margin: 0;
+    }
 }
