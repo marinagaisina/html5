@@ -5,6 +5,39 @@ body {
   width: 1280px;
   margin: 0 auto;
 }
+header {
+  width: 100%;
+  min-height: 323px;
+  box-sizing: border-box;
+  background-color: #445161;
+  display: flex;
+  justify-content: space-between;
+  color: #ffffff;
+  font-family: Arial;
+  padding: 50px;
+}
+header img {
+  width: 469px;
+  height: 214px;
+}
+.header_wrp {
+  width: 458px;
+}
+.header_wrp .header_title {
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+  font-size: 60px;
+  line-height: 0.75;
+  margin: 0 0 50px 0;
+}
+.header_wrp .header_list {
+  /* Style for "Put on thi" 
+        width: 422px;
+        height: 127px;*/
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 36px;
+}
 .header_title,
 .about_product_title,
 .screenshots_title,
@@ -12,15 +45,6 @@ body {
 .buy_title,
 .contacts {
   display: block;
-}
-.header_title {
-  width: 367px;
-  height: 44px;
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
-  color: #ffffff;
-  font-family: Arial;
-  font-size: 60px;
-  font-weight: 400;
 }
 footer {
   display: flex;
