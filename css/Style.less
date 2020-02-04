@@ -53,6 +53,11 @@ header {
     color: #ffffff;
     background-color: #445161;
 }
+
+header img {
+    background-color: #445161;
+}
+
 .header_wrp {
     // width: 458px;
     // height: 222px;
@@ -116,6 +121,9 @@ header {
         &:last-child {
             margin: 0;
         }
+    }
+    video {
+        background-color: #445161;
     }  
 }
 
@@ -187,6 +195,9 @@ header {
         // box-sizing: border-box;
         margin: 0;
         display: flex;
+        & img {
+            background-color: #445161;
+        }
         &_figcaption {
             width: 360px;
             margin: 0 0 0 15px;
@@ -367,7 +378,7 @@ footer {
         display: flex;
         flex-direction: row;
         border: none;
-        .dimensions(500px, 354px);
+        .dimensions(500px; 354px);
         padding: 0;
         margin: 0 45px 0 0;        
     }
@@ -423,70 +434,84 @@ footer {
             outline: none;
         }      
     }      
-
-    .social_list {
-        list-style-type: none;
-        margin: 0;
-        padding: 0 0 0 30px;
+    .contacts div:first-child{
+        padding: 0 0 0 26px;
+        margin: 0 0 37px 0;
         font-size: 16px;
         color: #ffffff;
-        &_item {
+        span {
+            display: block;
             margin: 0 0 29px 0;
-            position: relative;
-            &:last-child {
-                margin: 0 0 37px 0;
-            }
+            position: relative;           
         }
-
-        .skype_img::before {
-            .before_attributes;
-            background-image: url(../img/skype_icon.png);
-        }
-        .icq_img::before {
-            .before_attributes;
-            background-image: url(../img/icq_icon.png);
-        }
-        .email_img::before {
-            .before_attributes;
-            background-image: url(../img/email_icon.png);
-        }
-        .phone_img::before {
-            .before_attributes;
-            background-image: url(../img/phone_icon.png);
+        & span:last-child {
+            margin: 0;
         }
         .before_attributes {
             content: "";
             display: block;
-            .dimensions(26px; 26px);
+            background-repeat: no-repeat;
+            // -webkit-background-size: cover;
+            // background-size: cover;
+            width: 26px;
+            height: 26px;
             position: absolute;
             top: -4px;
             left: -28px;
-            background-repeat: no-repeat;
+        }    
+                    
+      .skype_icon::before {
+            .before_attributes;
+            background-image: url(../img/skype_icon.png);
+            // background-color: blue;
+        }
+        .icq_icon::before {
+            .before_attributes;
+            background-image: url(../img/icq_icon.png);
+            // background-color: green;
+        }
+        .email_icon::before {
+            .before_attributes;
+            background-image: url(../img/email_icon.png);
+            // background-color: grey;
+        }
+        .phone_icon::before {
+            .before_attributes;
+            background-image: url(../img/phone_icon.png);
+            // background-color: darkgray;
         }
     }
-    .social_link_item {
-        display: inline-block;
-        margin: 0 2px 0 0;
-        border-radius: 50%;
-        .dimensions(40px;40px);
-        background-repeat: no-repeat;
-        background-position: center;
-    }
+    .social_links{
+        display: flex;
+        & a {
+            display: block;
+            margin: 0 5px 0 0;
+            border-radius: 50%;
+            .dimensions(42px;42px);
+            background-repeat: no-repeat;
+            background-image: url(../img/social_buttons.png);
+            // background-color: #445162;
+            &:hover {
+                background-color: rgb(44, 18, 18); 
+            }
+        }
+    }       
     .tw_icon {
-        background-image: url(../img/tw_icon.png);
+        background-position: -1px;
     }
     .fb_icon {
-        background-image: url(../img/fb_icon.png);
+        background-position: -50px;
     }
     .in_icon {
-        background-image: url(../img/IN_icon.png);
+        background-position: -99px;
     }
     .g_icon {
-        background-image: url(../img/G_icon.png);
+        background-position: -149px;
     }
     .youtube_icon {
-        background-image: url(../img/youtube_icon.png);
+        background-position: -198px;
     }
+    
     .footer_copyright {
         .centering;
         font-size: 13px;
@@ -497,4 +522,5 @@ footer {
         margin: 0;
         color: #445162;
     }
+    
 }
